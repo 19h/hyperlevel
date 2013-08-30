@@ -1,7 +1,7 @@
 {
     "name"            : "hyperlevel"
-  , "description"     : "A Node HyperDex-LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN-hyper)"
-  , "version"         : "0.15.0"
+  , "description"     : "A HyperDex-LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN-hyper)"
+  , "version"         : "0.15.1"
   , "contributors"    : [
         "Rod Vagg <r@va.gg> (https://github.com/rvagg)"
       , "John Chesley <john@chesl.es> (https://github.com/chesles/)"
@@ -34,7 +34,7 @@
     ]
   , "main"            : "index.js"
   , "dependencies"    : {
-        "leveldown-hyper"       : "~0.5.0"
+        "leveldown-hyper"       : "~0.8.0"
       , "levelup"               : "~0.15.0"
     }
   , "scripts"         : {
