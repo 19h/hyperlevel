@@ -1,5 +1,5 @@
 var     levelup = require('levelup'),
-	ldH     = require("leveldown-hyper"),
+	ldH     = require("lmdb"),
      	ldh_f   = function (location) { return new ldH(location) }
 
 module.exports = function LevelUP (location, options, callback) {
