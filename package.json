@@ -1,7 +1,7 @@
 {
     "name"            : "hyperlevel"
   , "description"     : "A Hyper-LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN-hyper)"
-  , "version"         : "0.15.1"
+  , "version"         : "0.15.0-1"
   , "contributors"    : [
         "Rod Vagg <r@va.gg> (https://github.com/rvagg)"
       , "John Chesley <john@chesl.es> (https://github.com/chesles/)"

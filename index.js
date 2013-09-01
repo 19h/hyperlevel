@@ -2,7 +2,7 @@ var     levelup = require('levelup'),
 	ldH     = require("leveldown-hyper"),
      	ldh_f   = function (location) { return new ldH(location) }
 
-module.exports = function LevelUP (location, options, callback) {
+var LevelUP = function (location, options, callback) {
 	if ( options instanceof Function ) {
 		callback = options
 		options  = { db: ldh_f }
@@ -19,3 +19,9 @@ module.exports = function LevelUP (location, options, callback) {
 
 	return levelup ( location, options, callback )
 }
+
+Object.keys(levelup).forEach(function (a) {
+	LevelUP[a] = levelup[a];
+})
+
+module.exports = LevelUP;
