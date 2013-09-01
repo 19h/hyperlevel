@@ -1,19 +1,12 @@
-Level
+hyperlevel
 =====
 
-![LevelDB Logo](https://twimg0-a.akamaihd.net/profile_images/3360574989/92fc472928b444980408147e5e5db2fa_bigger.png)
+This is a convenience package that bundles the current release of **[LevelUP](https://github.com/rvagg/node-levelup)** and **[LevelDOWN-hyper](https://github.com/rvagg/leveldown)** and exposes LevelUP on its export.
 
-### Fast & simple storage - a Node.js-style LevelDB wrapper**
-
-[![NPM](https://nodei.co/npm/level.png?stars&downloads)](https://nodei.co/npm/level/) [![NPM](https://nodei.co/npm-dl/level.png)](https://nodei.co/npm/level/)
-
-
-This is a convenience package that bundles the current release of **[LevelUP](https://github.com/rvagg/node-levelup)** and **[LevelDOWN](https://github.com/rvagg/node-leveldown)** and exposes LevelUP on its export.
-
-Use this package to avoid having to explicitly install LevelDOWN when you just want plain old LevelDB from LevelUP.
+Use this package to avoid having to explicitly install levelDOWN-hyper when you just want plain old LevelDB from LevelUP.
 
 ```js
-var level = require('level')
+var level = require('hyperlevel')
 
 // 1) Create our database, supply location and options.
 //    This will create or open the underlying LevelDB store.
@@ -33,21 +26,9 @@ db.put('name', 'Level', function (err) {
 })
 ```
 
-See **[LevelUP](https://github.com/rvagg/node-levelup)** and **[LevelDOWN](https://github.com/rvagg/node-leveldown)** for more details.
-
-<a name="contributing"></a>
-Contributing
-------------
-
-Level is an **OPEN Open Source Project**. This means that:
-
-> Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.
-
-See the [CONTRIBUTING.md](https://github.com/Level/level/blob/master/CONTRIBUTING.md) file for more details.
-
 ### Contributors
 
-Level, including LevelUP & LevelDOWN, is only possible due to the excellent work of the following contributors:
+Level, including LevelUP & levelDOWN-hyper, is only possible due to the excellent work of the following contributors:
 
 <table><tbody>
 <tr><th align="left">Rod Vagg</th><td><a href="https://github.com/rvagg">GitHub/rvagg</a></td><td><a href="http://twitter.com/rvagg">Twitter/@rvagg</a></td></tr>
@@ -63,8 +44,9 @@ Level, including LevelUP & LevelDOWN, is only possible due to the excellent work
 <tr><th align="left">Matteo Collina</th><td><a href="https://github.com/mcollina">GitHub/mcollina</a></td><td><a href="https://twitter.com/matteocollina">Twitter/@matteocollina</a></td></tr>
 <tr><th align="left">Pedro Teixeira</th><td><a href="https://github.com/pgte">GitHub/pgte</a></td><td><a href="https://twitter.com/pgte">Twitter/@pgte</a></td></tr>
 <tr><th align="left">James Halliday</th><td><a href="https://github.com/substack">GitHub/substack</a></td><td><a href="https://twitter.com/substack">Twitter/@substack</a></td></tr>
+<tr><th align="left">Kenan Sulayman</th><td><a href="https://github.com/kenansulayman">GitHub/kenansulayman</a></td><td><a href="http://twitter.com/rvagg">Twitter/@kenansulayman</a></td></tr>
 </tbody></table>
-
+<table><tbody>
 
 <a name="licence"></a>
 Licence &amp; copyright
